@@ -11,3 +11,5 @@ export { SellerType, ILanguage, IExperience, IEducation, ICertificate, ISellerDo
 export { uploads, videoUpload } from './cloudinary-upload';
 
 export { BadRequestError, CustomError, ErrnoException, FileTooLargeError, IError, IErrorResponse, NotAuthorizedError, NotFoundError, ServerError } from './error-handler';
+
+export { verifyGatewayRequeset } from './gateway-middleware'
