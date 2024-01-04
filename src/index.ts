@@ -9,3 +9,5 @@ export { ISearchResult, IHitsTotal, IQueryList, IQueryString, ITerm, IPaginatePr
 export { SellerType, ILanguage, IExperience, IEducation, ICertificate, ISellerDocument } from './interfaces/seller.interface';
 
 export { uploads, videoUpload } from './cloudinary-upload';
+
+export { BadRequestError, CustomError, ErrnoException, FileTooLargeError, IError, IErrorResponse, NotAuthorizedError, NotFoundError, ServerError } from './error-handler';
