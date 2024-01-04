@@ -8,3 +8,4 @@ export { IReviewMessageDetails, IRatingTypes, IReviewDocument, IRatingCategoryIt
 export { ISearchResult, IHitsTotal, IQueryList, IQueryString, ITerm, IPaginateProps } from './interfaces/search.interface';
 export { SellerType, ILanguage, IExperience, IEducation, ICertificate, ISellerDocument } from './interfaces/seller.interface';
 
+export { uploads, videoUpload } from './cloudinary-upload';
