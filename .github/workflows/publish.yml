@@ -12,16 +12,15 @@ jobs:
       packages: write
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v4
         with:
           node-version: '20.x' #could be lower?
       - run: npm install
       - run: npm run build
       - run: |
-        echo @DrRawley:https://npm.pkg.github.com/ > build/.npmrc
-        echo '//npm.pkg.github.com/:_authToken=${NPM_TOKEN}' >> build/.npmrc
+          echo @DrRawley:https://npm.pkg.github.com/ > build/.npmrc
+          echo '//npm.pkg.github.com/:_authToken=${NPM_TOKEN}' >> build/.npmrc
       - run: npm publish
         working-directory: ./build
         env:
           NPM_TOKEN: ${{secrets.GITHUB_TOKEN}}
-          
